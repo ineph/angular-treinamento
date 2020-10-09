@@ -1,0 +1,16 @@
+<div>
+    <h1>
+        funcionarios:
+    </h1>
+    <div *ngFor="let employee of employees">
+        <ul>
+            <li>
+                <p [ngStyle]="employee.employee_age > 50 ? {'color': 'red'} : {}">
+                    {{employee.employee_age}}           
+                </p>
+                {{employee.employee_name}}<br>
+                {{employee.employee_salary}}<br>
+            </li>
+        </ul> 
+    </div>
+</div>
